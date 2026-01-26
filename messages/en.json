@@ -30,8 +30,12 @@
   },
   "search": {
     "placeholder": "Search events, people, papers...",
+    "title": "Search",
     "results": "Search Results",
+    "resultsFor": "Search results for:",
+    "allEvents": "All Events",
     "noResults": "No results found",
+    "backHome": "Back to Home",
     "filters": "Filters"
   },
   "timeline": {

@@ -1,4 +1,4 @@
-import { events } from '@/data/events';
+import { events } from '@/lib/data/events';
 import FlexSearch from 'flexsearch';
 import fs from 'fs';
 import path from 'path';

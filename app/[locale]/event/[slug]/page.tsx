@@ -1,8 +1,6 @@
 import { notFound } from 'next/navigation';
-import { useTranslations, useLocale } from 'next-intl';
 import { events } from '@/lib/data/events';
 import { Link } from '@/lib/i18n/routing';
-import { getSectionsForNav } from '@/lib/data/sections';
 import { SideNav } from '@/components/navigation/SideNav';
 
 interface EventPageProps {

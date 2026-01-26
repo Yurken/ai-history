@@ -1,0 +1,82 @@
+[
+  {
+    "id": "turing-1950",
+    "title_zh": "图灵测试",
+    "title_en": "Turing Test",
+    "description_zh": "艾伦·图灵提出\"模仿游戏\"，即后来的图灵测试，作为判断机器是否具有智能的标准。",
+    "description_en": "Alan Turing proposes the \"Imitation Game\", later known as the Turing Test, as a criterion for machine intelligence.",
+    "tags": [
+      "turing",
+      "foundation",
+      "philosophy"
+    ],
+    "category": "paper",
+    "year": 1950,
+    "slug": "turing-test-1950"
+  },
+  {
+    "id": "dartmouth-1956",
+    "title_zh": "达特茅斯会议",
+    "title_en": "Dartmouth Workshop",
+    "description_zh": "达特茅斯人工智能夏季研究项目召开，标志着\"人工智能\"作为一门学科的诞生。",
+    "description_en": "The Dartmouth Summer Research Project on Artificial Intelligence is held, marking the birth of AI as a discipline.",
+    "tags": [
+      "foundation",
+      "conference",
+      "mccarthy",
+      "minsky"
+    ],
+    "category": "conference",
+    "year": 1956,
+    "slug": "dartmouth-workshop-1956"
+  },
+  {
+    "id": "alexnet-2012",
+    "title_zh": "AlexNet：深度学习突破",
+    "title_en": "AlexNet: Deep Learning Breakthrough",
+    "description_zh": "AlexNet在ImageNet竞赛中以大幅优势夺冠，标志着深度学习时代的开始。",
+    "description_en": "AlexNet wins the ImageNet competition by a large margin, marking the beginning of the deep learning era.",
+    "tags": [
+      "deep-learning",
+      "cnn",
+      "imagenet",
+      "hinton"
+    ],
+    "category": "model",
+    "year": 2012,
+    "slug": "alexnet-2012"
+  },
+  {
+    "id": "transformer-2017",
+    "title_zh": "Transformer：注意力机制革命",
+    "title_en": "Transformer: The Attention Revolution",
+    "description_zh": "《Attention Is All You Need》论文发表，提出Transformer架构，彻底改变NLP领域。",
+    "description_en": "The paper \"Attention Is All You Need\" is published, introducing the Transformer architecture and revolutionizing NLP.",
+    "tags": [
+      "transformer",
+      "attention",
+      "nlp",
+      "google"
+    ],
+    "category": "paper",
+    "year": 2017,
+    "slug": "attention-is-all-you-need-2017"
+  },
+  {
+    "id": "gpt-4-2023",
+    "title_zh": "GPT-4发布",
+    "title_en": "GPT-4 Launch",
+    "description_zh": "OpenAI发布GPT-4，展现强大的多模态能力和推理能力，引发全球对AGI的讨论。",
+    "description_en": "OpenAI releases GPT-4, demonstrating powerful multimodal and reasoning capabilities, sparking global discussion about AGI.",
+    "tags": [
+      "llm",
+      "gpt",
+      "openai",
+      "multimodal",
+      "agi"
+    ],
+    "category": "model",
+    "year": 2023,
+    "slug": "gpt-4-launch-2023"
+  }
+]

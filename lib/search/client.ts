@@ -45,18 +45,22 @@ export class SearchClient {
     const results: SearchIndex[] = [];
     const searchResults = this.index!.search(query, limit);
 
-    if (Array.isArray(searchResults)) {
-      searchResults.forEach((result: any) => {
-        if (result.result) {
-          result.result.forEach((id: string) => {
-            const item = this.data.find(d => d.id === id);
-            if (item && !results.find(r => r.id === item.id)) {
-              results.push(item);
-            }
-          });
-        }
-      });
+    // FlexSearch.Document.search returns an array of SimpleDocumentSearchResultSetUnit
+    interface SearchResultUnit {
+      field: string;
+      result: string[];
     }
+
+    (searchResults as unknown as SearchResultUnit[]).forEach((result) => {
+      if (result.result) {
+        result.result.forEach((id) => {
+          const item = this.data.find(d => d.id === id);
+          if (item && !results.find(r => r.id === item.id)) {
+            results.push(item);
+          }
+        });
+      }
+    });
 
     return results.slice(0, limit);
   }

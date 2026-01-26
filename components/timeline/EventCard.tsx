@@ -31,7 +31,7 @@ export function EventCard({ event, index = 0 }: EventCardProps) {
       className={cn(
         'block group relative',
         'opacity-0 translate-y-8 animate-in',
-        'animation-delay-[(--delay)]'
+        'animation-delay-custom'
       )}
       style={{ '--delay': `${index * 100}ms` } as React.CSSProperties}
     >

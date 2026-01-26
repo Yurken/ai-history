@@ -30,8 +30,12 @@
   },
   "search": {
     "placeholder": "搜索事件、人物、论文...",
+    "title": "搜索",
     "results": "搜索结果",
+    "resultsFor": "以下是搜索结果：",
+    "allEvents": "所有事件",
     "noResults": "未找到相关结果",
+    "backHome": "返回首页",
     "filters": "筛选"
   },
   "timeline": {

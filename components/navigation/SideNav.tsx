@@ -1,19 +1,17 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { Link } from '@/lib/i18n/routing';
 import { useActiveSection } from '@/lib/hooks/useActiveSection';
 import { sections } from '@/lib/data/sections';
 import { cn } from '@/lib/utils/cn';
 import { useMediaQuery } from '@/lib/hooks/useMediaQuery';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 interface SideNavProps {
   locale: string;
 }
 
 export function SideNav({ locale }: SideNavProps) {
-  const t = useTranslations('sections');
   const sectionIds = sections.map(s => s.id);
   const activeSection = useActiveSection(sectionIds);
   const isMobile = useMediaQuery('(max-width: 1024px)');

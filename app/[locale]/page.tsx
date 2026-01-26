@@ -4,14 +4,12 @@ import { HeroSection } from '@/components/sections/HeroSection';
 import { TransformerSection } from '@/components/sections/TransformerSection';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 import { EventCard } from '@/components/timeline/EventCard';
-import { events, sections } from '@/lib/data/events';
-import { useLocale, useTranslations } from 'next-intl';
-import { gsap, ScrollTrigger, shouldAnimate } from '@/lib/utils/animation';
+import { events } from '@/lib/data/events';
+import { useLocale } from 'next-intl';
+import { gsap, shouldAnimate } from '@/lib/utils/animation';
 import { useLayoutEffect, useRef } from 'react';
-import { cn } from '@/lib/utils/cn';
 
 export default function HomePage() {
-  const t = useTranslations();
   const locale = useLocale();
   const originsRef = useRef<HTMLElement>(null);
 

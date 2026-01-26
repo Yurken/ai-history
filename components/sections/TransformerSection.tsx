@@ -1,15 +1,13 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
+import { useLocale } from 'next-intl';
 import { gsap, ScrollTrigger, shouldAnimate } from '@/lib/utils/animation';
 import { SectionWrapper } from './SectionWrapper';
 import { Link } from '@/lib/i18n/routing';
 import { events } from '@/lib/data/events';
-import { cn } from '@/lib/utils/cn';
 
 export function TransformerSection() {
-  const t = useTranslations('sections');
   const locale = useLocale();
   const sectionRef = useRef<HTMLElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);

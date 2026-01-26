@@ -1,14 +1,13 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { gsap, ScrollTrigger, shouldAnimate } from '@/lib/utils/animation';
 import { SectionWrapper } from './SectionWrapper';
 import { cn } from '@/lib/utils/cn';
 
 export function HeroSection() {
   const t = useTranslations('hero');
-  const locale = useLocale();
   const sectionRef = useRef<HTMLElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
