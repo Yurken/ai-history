@@ -57,7 +57,7 @@ npm start
 ```
 ai-history/
 ├── app/                    # Next.js App Router
-│   ├── [lang]/            # 语言路由
+│   ├── [locale]/          # 语言路由
 │   │   ├── page.tsx       # 首页（长滚动）
 │   │   ├── event/[slug]/  # 事件详情页
 │   │   └── layout.tsx     # 语言布局
@@ -122,7 +122,7 @@ ai-history/
 ## 添加新章节
 
 1. 在 `lib/data/sections.ts` 添加章节配置
-2. 在 `app/[lang]/page.tsx` 添加章节 JSX
+2. 在 `app/[locale]/page.tsx` 添加章节 JSX
 3. 在 `components/sections/` 创建章节组件（如需自定义动效）
 
 ## 自定义动画
