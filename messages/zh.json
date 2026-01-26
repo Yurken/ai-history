@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "首页",
+    "timeline": "时间线",
+    "search": "搜索",
+    "language": "语言"
+  },
+  "hero": {
+    "title": "AI 全史",
+    "subtitle": "从图灵测试到 GPT：探索人工智能的完整发展历程",
+    "scrollHint": "向下滚动探索"
+  },
+  "sections": {
+    "hero": "序章",
+    "origins": "起源",
+    "early-ai": "早期AI",
+    "expert-systems": "专家系统",
+    "statistical-learning": "统计学习",
+    "deep-learning": "深度学习",
+    "transformer": "Transformer",
+    "llm-era": "大模型时代",
+    "future": "未来展望"
+  },
+  "event": {
+    "paper": "论文",
+    "model": "模型",
+    "person": "人物",
+    "conference": "会议",
+    "milestone": "里程碑"
+  },
+  "search": {
+    "placeholder": "搜索事件、人物、论文...",
+    "results": "搜索结果",
+    "noResults": "未找到相关结果",
+    "filters": "筛选"
+  },
+  "timeline": {
+    "title": "AI 发展时间线",
+    "all": "全部",
+    "byDecade": "按年代",
+    "byCategory": "按类别"
+  },
+  "common": {
+    "readMore": "阅读更多",
+    "relatedEvents": "相关事件",
+    "backToTop": "返回顶部",
+    "share": "分享",
+    "cite": "引用"
+  }
+}

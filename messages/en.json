@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Home",
+    "timeline": "Timeline",
+    "search": "Search",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "The Complete History of AI",
+    "subtitle": "From Turing Test to GPT: Explore the Full Journey of Artificial Intelligence",
+    "scrollHint": "Scroll to explore"
+  },
+  "sections": {
+    "hero": "Prologue",
+    "origins": "Origins",
+    "early-ai": "Early AI",
+    "expert-systems": "Expert Systems",
+    "statistical-learning": "Statistical Learning",
+    "deep-learning": "Deep Learning",
+    "transformer": "Transformer",
+    "llm-era": "LLM Era",
+    "future": "Future"
+  },
+  "event": {
+    "paper": "Paper",
+    "model": "Model",
+    "person": "Person",
+    "conference": "Conference",
+    "milestone": "Milestone"
+  },
+  "search": {
+    "placeholder": "Search events, people, papers...",
+    "results": "Search Results",
+    "noResults": "No results found",
+    "filters": "Filters"
+  },
+  "timeline": {
+    "title": "AI Development Timeline",
+    "all": "All",
+    "byDecade": "By Decade",
+    "byCategory": "By Category"
+  },
+  "common": {
+    "readMore": "Read More",
+    "relatedEvents": "Related Events",
+    "backToTop": "Back to Top",
+    "share": "Share",
+    "cite": "Cite"
+  }
+}
