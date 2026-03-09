@@ -5,7 +5,7 @@ import { useEffect, useState, Suspense } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { searchClient } from '@/lib/search/client';
 import { SearchIndex } from '@/lib/search/index';
-import { Link } from '@/lib/i18n/routing';
+import { Link } from '@/i18n/routing';
 import { EventCard } from '@/components/timeline/EventCard';
 import { events } from '@/lib/data/events';
 import { SideNav } from '@/components/navigation/SideNav';

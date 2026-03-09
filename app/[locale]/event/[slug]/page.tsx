@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { events } from '@/lib/data/events';
-import { Link } from '@/lib/i18n/routing';
+import { Link } from '@/i18n/routing';
 import { SideNav } from '@/components/navigation/SideNav';
 
 interface EventPageProps {

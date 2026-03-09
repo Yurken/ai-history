@@ -11,35 +11,55 @@ import { useLayoutEffect, useRef } from 'react';
 
 export default function HomePage() {
   const locale = useLocale();
-  const originsRef = useRef<HTMLElement>(null);
+  const originsRef = useRef<HTMLDivElement>(null);
+  const earlyAiRef = useRef<HTMLDivElement>(null);
+  const expertRef = useRef<HTMLDivElement>(null);
+  const statRef = useRef<HTMLDivElement>(null);
+  const deepRef = useRef<HTMLDivElement>(null);
+  const llmRef = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
     if (!shouldAnimate()) return;
 
     const ctx = gsap.context(() => {
-      // Origins section - 交替卡片动画
-      const cards = originsRef.current?.querySelectorAll('.event-card');
-      if (cards) {
-        gsap.from(cards, {
-          opacity: 0,
-          x: (i) => (i % 2 === 0 ? -100 : 100),
-          duration: 0.8,
-          stagger: 0.2,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: originsRef.current,
-            start: 'top 70%',
-            end: 'bottom 30%',
-            toggleActions: 'play none none reverse',
-          },
-        });
-      }
-    }, originsRef);
+      // Helper for staggering animations
+      const animateCards = (ref: React.RefObject<HTMLDivElement>) => {
+        const cards = ref.current?.querySelectorAll('.event-card');
+        if (cards && cards.length > 0) {
+          gsap.from(cards, {
+            opacity: 0,
+            y: 50,
+            duration: 0.8,
+            stagger: 0.2,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: ref.current,
+              start: 'top 70%',
+              end: 'bottom 30%',
+              toggleActions: 'play none none reverse',
+            },
+          });
+        }
+      };
+
+      animateCards(originsRef);
+      animateCards(earlyAiRef);
+      animateCards(expertRef);
+      animateCards(statRef);
+      animateCards(deepRef);
+      animateCards(llmRef);
+
+    });
 
     return () => ctx.revert();
   }, []);
 
   const originsEvents = events.filter(e => e.year >= 1940 && e.year <= 1959);
+  const earlyAiEvents = events.filter(e => e.year >= 1960 && e.year <= 1979);
+  const expertSystemEvents = events.filter(e => e.year >= 1980 && e.year <= 1989);
+  const statisticalEvents = events.filter(e => e.year >= 1990 && e.year <= 2009);
+  const deepLearningEvents = events.filter(e => e.year >= 2010 && e.year <= 2016);
+  const llmEvents = events.filter(e => e.year >= 2020);
 
   return (
     <div className="relative">
@@ -85,71 +105,126 @@ export default function HomePage() {
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               {locale === 'zh'
-                ? '早期程序的辉煌与第一次AI寒冬的到来'
-                : 'Early program successes and the arrival of the first AI Winter'}
+                ? '从ELIZA的对话尝试到《感知机》带来的第一次寒冬'
+                : 'From ELIZA\'s conversation attempts to the first AI Winter caused by "Perceptrons"'}
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((i) => (
-              <div
-                key={i}
-                className="group p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300"
-              >
-                <div className="text-4xl font-bold text-white mb-4">196{i}</div>
-                <h3 className="text-lg font-semibold text-white mb-2">
-                  {locale === 'zh' ? '早期程序' : 'Early Programs'}
-                </h3>
-                <p className="text-gray-300 text-sm">
-                  {locale === 'zh' ? 'ELIZA、General Problem Solver等早期AI程序展示了机器智能的可能性' : 'Early AI programs like ELIZA and General Problem Solver demonstrated the possibilities of machine intelligence'}
-                </p>
+          <div ref={earlyAiRef} className="grid md:grid-cols-2 gap-6">
+             {earlyAiEvents.map((event, index) => (
+              <div key={event.id} className="event-card">
+                <EventCard event={event} index={index} />
               </div>
             ))}
           </div>
         </div>
       </SectionWrapper>
 
-      {/* Deep Learning Section - 2012 */}
-      <SectionWrapper id="deep-learning" theme="dark" className="py-24">
+      {/* Expert Systems Section - 1980s */}
+      <SectionWrapper id="expert-systems" theme="light" className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-primary-400 text-sm font-semibold tracking-wider uppercase">
-              2012
+            <span className="text-primary-600 dark:text-primary-400 text-sm font-semibold tracking-wider uppercase">
+              1980s
             </span>
-            <h2 className="text-section font-display font-bold text-white mt-4 mb-6">
-              {locale === 'zh' ? '深度学习拐点：AlexNet' : 'Deep Learning Turning Point: AlexNet'}
+            <h2 className="text-section font-display font-bold text-gray-900 dark:text-white mt-4 mb-6">
+              {locale === 'zh' ? '专家系统的兴起' : 'The Rise of Expert Systems'}
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               {locale === 'zh'
-                ? '深度卷积神经网络在ImageNet竞赛中夺冠，开启深度学习时代'
-                : 'Deep CNN wins ImageNet, kicking off the deep learning era'}
+                ? '知识库与推理引擎的结合，AI首次在商业领域取得成功'
+                : 'Combining knowledge bases and inference engines, AI finds its first commercial success'}
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="p-8 bg-gradient-to-br from-primary-500/20 to-purple-500/20 rounded-2xl border border-primary-500/30">
-              <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-purple-400 mb-4">
+          <div ref={expertRef} className="grid md:grid-cols-2 gap-8">
+            {expertSystemEvents.map((event, index) => (
+              <div key={event.id} className="event-card">
+                <EventCard event={event} index={index} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </SectionWrapper>
+
+      {/* Statistical Learning Section - 1990s-2000s */}
+      <SectionWrapper id="statistical-learning" theme="dark" className="py-24">
+        <div className="max-w-7xl mx-auto px-6">
+           <div className="text-center mb-16">
+            <span className="text-primary-400 text-sm font-semibold tracking-wider uppercase">
+              1990s-2000s
+            </span>
+            <h2 className="text-section font-display font-bold text-white mt-4 mb-6">
+              {locale === 'zh' ? '统计学习与深蓝' : 'Statistical Learning & Deep Blue'}
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              {locale === 'zh'
+                ? '概率模型成为主流，计算机击败人类国际象棋冠军'
+                : 'Probabilistic models become mainstream; computer defeats human chess champion'}
+            </p>
+          </div>
+
+          <div ref={statRef} className="grid md:grid-cols-2 gap-8">
+            {statisticalEvents.map((event, index) => (
+              <div key={event.id} className="event-card">
+                <EventCard event={event} index={index} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </SectionWrapper>
+
+
+      {/* Deep Learning Section - 2010s */}
+      <SectionWrapper id="deep-learning" theme="gradient" className="py-24">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <span className="text-primary-300 text-sm font-semibold tracking-wider uppercase">
+              2010s
+            </span>
+            <h2 className="text-section font-display font-bold text-white mt-4 mb-6">
+              {locale === 'zh' ? '深度学习的爆发' : 'The Explosion of Deep Learning'}
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              {locale === 'zh'
+                ? '从AlexNet到AlphaGo，大数据与算力开启了AI新纪元'
+                : 'From AlexNet to AlphaGo, big data and computing power usher in a new era of AI'}
+            </p>
+          </div>
+
+           {/* Special Stats for AlexNet */}
+           <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+              <div className="text-6xl font-bold text-white mb-4">
                 15.3%
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">
                 {locale === 'zh' ? 'Top-5 错误率' : 'Top-5 Error Rate'}
               </h3>
               <p className="text-gray-300">
-                {locale === 'zh' ? '相比前一年的26%，大幅提升' : 'Significant improvement from 26% the previous year'}
+                {locale === 'zh' ? 'AlexNet将错误率从26%降至15.3%' : 'AlexNet reduced error rate from 26% to 15.3%'}
               </p>
             </div>
 
-            <div className="p-8 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-2xl border border-blue-500/30">
-              <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-4">
-                60M
+            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+              <div className="text-6xl font-bold text-white mb-4">
+                4:1
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">
-                {locale === 'zh' ? '参数数量' : 'Parameters'}
+                {locale === 'zh' ? 'AlphaGo vs 李世石' : 'AlphaGo vs Lee Sedol'}
               </h3>
               <p className="text-gray-300">
-                {locale === 'zh' ? '使用GPU训练的大规模神经网络' : 'Large-scale neural network trained with GPUs'}
+                {locale === 'zh' ? 'AI首次战胜人类围棋世界冠军' : 'AI defeats human Go world champion for the first time'}
               </p>
             </div>
+          </div>
+
+          <div ref={deepRef} className="grid md:grid-cols-2 gap-8">
+             {deepLearningEvents.map((event, index) => (
+              <div key={event.id} className="event-card">
+                <EventCard event={event} index={index} />
+              </div>
+            ))}
           </div>
         </div>
       </SectionWrapper>
@@ -174,8 +249,8 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {events.filter(e => e.year >= 2020).map((event, index) => (
+          <div ref={llmRef} className="grid md:grid-cols-2 gap-6">
+            {llmEvents.map((event, index) => (
               <div key={event.id} className="event-card">
                 <EventCard event={event} index={index} />
               </div>

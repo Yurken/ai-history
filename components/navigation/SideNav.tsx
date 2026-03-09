@@ -1,6 +1,6 @@
 'use client';
 
-import { Link } from '@/lib/i18n/routing';
+import { Link } from '@/i18n/routing';
 import { useActiveSection } from '@/lib/hooks/useActiveSection';
 import { sections } from '@/lib/data/sections';
 import { cn } from '@/lib/utils/cn';

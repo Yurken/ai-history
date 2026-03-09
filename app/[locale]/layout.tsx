@@ -1,7 +1,7 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { routing } from '@/lib/i18n/routing';
+import { routing } from '@/i18n/routing';
 import { GSAPProvider } from '@/components/providers/GSAPProvider';
 import { SideNav } from '@/components/navigation/SideNav';
 import { Inter } from 'next/font/google';

@@ -5,7 +5,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import { events } from '@/lib/data/events';
 import { EventCard } from '@/components/timeline/EventCard';
 import { SideNav } from '@/components/navigation/SideNav';
-import { Link } from '@/lib/i18n/routing';
+import { Link } from '@/i18n/routing';
 
 export default function TagPage() {
   const params = useParams();

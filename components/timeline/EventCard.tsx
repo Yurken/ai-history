@@ -2,7 +2,7 @@
 
 import { Event } from '@/types/event';
 import { useLocale } from 'next-intl';
-import { Link } from '@/lib/i18n/routing';
+import { Link } from '@/i18n/routing';
 import { cn } from '@/lib/utils/cn';
 
 interface EventCardProps {
@@ -10,12 +10,15 @@ interface EventCardProps {
   index?: number;
 }
 
-const categoryColors = {
+const categoryColors: Record<string, string> = {
   paper: 'bg-blue-500/20 text-blue-300 border-blue-500/40',
   model: 'bg-purple-500/20 text-purple-300 border-purple-500/40',
   person: 'bg-green-500/20 text-green-300 border-green-500/40',
   conference: 'bg-orange-500/20 text-orange-300 border-orange-500/40',
   milestone: 'bg-red-500/20 text-red-300 border-red-500/40',
+  software: 'bg-cyan-500/20 text-cyan-300 border-cyan-500/40',
+  book: 'bg-yellow-500/20 text-yellow-300 border-yellow-500/40',
+  product: 'bg-pink-500/20 text-pink-300 border-pink-500/40',
 };
 
 export function EventCard({ event, index = 0 }: EventCardProps) {

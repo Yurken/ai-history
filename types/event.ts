@@ -9,7 +9,7 @@ export interface Event {
   description_en: string;
   content_zh?: string;
   content_en?: string;
-  category: 'paper' | 'model' | 'person' | 'conference' | 'milestone';
+  category: 'paper' | 'model' | 'person' | 'conference' | 'milestone' | 'software' | 'book' | 'product';
   tags: string[];
   links?: Link[];
   images?: string[];

@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import { useLocale } from 'next-intl';
 import { gsap, ScrollTrigger, shouldAnimate } from '@/lib/utils/animation';
 import { SectionWrapper } from './SectionWrapper';
-import { Link } from '@/lib/i18n/routing';
+import { Link } from '@/i18n/routing';
 import { events } from '@/lib/data/events';
 
 export function TransformerSection() {

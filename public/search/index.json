@@ -31,6 +31,66 @@
     "slug": "dartmouth-workshop-1956"
   },
   {
+    "id": "eliza-1966",
+    "title_zh": "ELIZA：首个聊天机器人",
+    "title_en": "ELIZA: The First Chatbot",
+    "description_zh": "Joseph Weizenbaum开发了ELIZA，这是最早的自然语言处理程序之一，能够模拟心理治疗师。",
+    "description_en": "Joseph Weizenbaum develops ELIZA, one of the earliest natural language processing programs, capable of simulating a psychotherapist.",
+    "tags": [
+      "nlp",
+      "chatbot",
+      "turing-test"
+    ],
+    "category": "software",
+    "year": 1966,
+    "slug": "eliza-chatbot-1966"
+  },
+  {
+    "id": "perceptrons-1969",
+    "title_zh": "《感知机》与AI寒冬",
+    "title_en": "Perceptrons and the AI Winter",
+    "description_zh": "Minsky和Papert出版《感知机》一书，指出了单层神经网络的局限性，导致了神经网络研究的第一次低潮。",
+    "description_en": "Minsky and Papert publish \"Perceptrons\", highlighting the limitations of single-layer neural networks, leading to the first decline in neural network research.",
+    "tags": [
+      "neural-networks",
+      "ai-winter",
+      "history"
+    ],
+    "category": "book",
+    "year": 1969,
+    "slug": "perceptrons-book-1969"
+  },
+  {
+    "id": "xcon-1980",
+    "title_zh": "XCON：专家系统的商业成功",
+    "title_en": "XCON: Commercial Success of Expert Systems",
+    "description_zh": "XCON（R1）为DEC公司每年节省数千万美元，标志着专家系统在商业上的巨大成功。",
+    "description_en": "XCON (R1) saves DEC millions of dollars annually, marking a huge commercial success for expert systems.",
+    "tags": [
+      "expert-systems",
+      "commercial-ai",
+      "rules"
+    ],
+    "category": "software",
+    "year": 1980,
+    "slug": "xcon-expert-system-1980"
+  },
+  {
+    "id": "deep-blue-1997",
+    "title_zh": "深蓝战胜卡斯帕罗夫",
+    "title_en": "Deep Blue Beats Kasparov",
+    "description_zh": "IBM的深蓝计算机在标准比赛中击败世界国际象棋冠军加里·卡斯帕罗夫。",
+    "description_en": "IBM's Deep Blue computer defeats world chess champion Garry Kasparov in a standard match.",
+    "tags": [
+      "chess",
+      "ibm",
+      "game-ai"
+    ],
+    "category": "milestone",
+    "year": 1997,
+    "slug": "deep-blue-chess-1997"
+  },
+  {
     "id": "alexnet-2012",
     "title_zh": "AlexNet：深度学习突破",
     "title_en": "AlexNet: Deep Learning Breakthrough",
@@ -47,6 +107,21 @@
     "slug": "alexnet-2012"
   },
   {
+    "id": "alphago-2016",
+    "title_zh": "AlphaGo战胜李世石",
+    "title_en": "AlphaGo Defeats Lee Sedol",
+    "description_zh": "DeepMind的AlphaGo以4:1战胜围棋世界冠军李世石，展示了深度强化学习的威力。",
+    "description_en": "DeepMind's AlphaGo defeats Go world champion Lee Sedol 4-1, demonstrating the power of deep reinforcement learning.",
+    "tags": [
+      "reinforcement-learning",
+      "go",
+      "deepmind"
+    ],
+    "category": "milestone",
+    "year": 2016,
+    "slug": "alphago-2016"
+  },
+  {
     "id": "transformer-2017",
     "title_zh": "Transformer：注意力机制革命",
     "title_en": "Transformer: The Attention Revolution",
@@ -61,6 +136,22 @@
     "category": "paper",
     "year": 2017,
     "slug": "attention-is-all-you-need-2017"
+  },
+  {
+    "id": "chatgpt-2022",
+    "title_zh": "ChatGPT发布",
+    "title_en": "ChatGPT Launch",
+    "description_zh": "OpenAI发布ChatGPT，凭借其惊人的对话能力迅速风靡全球，开启生成式AI热潮。",
+    "description_en": "OpenAI releases ChatGPT, which takes the world by storm with its amazing conversational abilities, starting the Generative AI boom.",
+    "tags": [
+      "llm",
+      "chatgpt",
+      "openai",
+      "rlhf"
+    ],
+    "category": "product",
+    "year": 2022,
+    "slug": "chatgpt-launch-2022"
   },
   {
     "id": "gpt-4-2023",

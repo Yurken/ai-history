@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { searchClient } from '@/lib/search/client';
 import { SearchIndex } from '@/lib/search/index';
-import { Link } from '@/lib/i18n/routing';
+import { Link } from '@/i18n/routing';
 import { cn } from '@/lib/utils/cn';
 import { useDebounce } from '@/lib/hooks/useDebounce';
 
