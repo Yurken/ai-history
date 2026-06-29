@@ -6,7 +6,7 @@
 
 ## 技术栈
 
-- **框架**: Next.js 14 (App Router)
+- **框架**: Next.js 16 (App Router)
 - **语言**: TypeScript
 - **样式**: Tailwind CSS
 - **动画**: GSAP + ScrollTrigger
@@ -20,6 +20,7 @@
 - ✅ 侧边目录导航（点击跳转 + 滚动高亮）
 - ✅ Apple 风格滚动动效
 - ✅ 事件详情页
+- ✅ 标签页
 - ✅ 实时搜索（客户端索引）
 - ✅ 响应式设计
 - ✅ 性能优化（懒加载、GPU加速）
@@ -60,6 +61,8 @@ ai-history/
 │   ├── [locale]/          # 语言路由
 │   │   ├── page.tsx       # 首页（长滚动）
 │   │   ├── event/[slug]/  # 事件详情页
+│   │   ├── search/        # 搜索页
+│   │   ├── tag/           # 标签页
 │   │   └── layout.tsx     # 语言布局
 │   ├── globals.css        # 全局样式
 │   └── layout.tsx         # 根布局
@@ -89,8 +92,8 @@ ai-history/
 | early-ai | 1960s-1970s | 早期AI | 视差滚动 |
 | expert-systems | 1980s | 专家系统 | 卡片叠加 |
 | statistical-learning | 1990s-2000s | 统计学习 | 水平滚动 |
-| deep-learning | 2012 | 深度学习 | 全屏粘滞 |
-| transformer | 2017 | Transformer | 文字揭示 |
+| deep-learning | 2010-2016 | 深度学习 | 全屏粘滞 |
+| transformer | 2017-2019 | Transformer | 文字揭示 |
 | llm-era | 2020s | 大模型 | 瀑布流 |
 | future | Future | 未来展望 | 对比卡片 |
 
@@ -110,7 +113,7 @@ ai-history/
   description_en: 'English description',
   content_zh: '中文详细内容（可选）',
   content_en: 'English detailed content (optional)',
-  category: 'paper' | 'model' | 'person' | 'conference' | 'milestone',
+  category: 'paper' | 'model' | 'person' | 'conference' | 'milestone' | 'software' | 'book' | 'product',
   tags: ['tag1', 'tag2'],
   links: [
     { title: 'Link title', url: 'https://...', type: 'paper' }
@@ -155,13 +158,13 @@ useEffect(() => {
 
 ```bash
 npm run build
-# 自动运行: node lib/search/generate-index.js
+# 自动运行: tsx lib/search/index.ts
 ```
 
 手动生成索引：
 
 ```bash
-node lib/search/index.ts
+npx tsx lib/search/index.ts
 ```
 
 ## 视觉规范
@@ -187,7 +190,6 @@ node lib/search/index.ts
 ## 待办事项
 
 - [ ] 添加更多历史事件数据
-- [ ] 实现标签页
 - [ ] 实现时间线浏览页
 - [ ] 添加分享功能
 - [ ] 添加引用导出（BibTeX、APA）
