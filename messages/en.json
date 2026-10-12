@@ -33,6 +33,19 @@
     "book": "Book",
     "product": "Product"
   },
+  "eventNotes": {
+    "title": "Study Notes",
+    "subtitle": "Background, mechanics, impact, and key takeaways in one read",
+    "overview": "Overview",
+    "background": "Background & Context",
+    "keyPoints": "Key Points",
+    "technical": "How It Works",
+    "impact": "Impact & Legacy",
+    "takeaways": "Key Takeaways",
+    "glossary": "Glossary",
+    "jumpNav": "Notes section navigation",
+    "readingTime": "About {minutes} min read"
+  },
   "search": {
     "placeholder": "Search events, people, papers...",
     "title": "Search",

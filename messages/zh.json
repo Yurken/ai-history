@@ -33,6 +33,19 @@
     "book": "书籍",
     "product": "产品"
   },
+  "eventNotes": {
+    "title": "深度学习笔记",
+    "subtitle": "背景、原理、影响与要点，一次读懂这个事件",
+    "overview": "事件概述",
+    "background": "背景与脉络",
+    "keyPoints": "核心要点",
+    "technical": "原理与技术细节",
+    "impact": "影响与后续",
+    "takeaways": "学习要点",
+    "glossary": "术语表",
+    "jumpNav": "笔记小节导航",
+    "readingTime": "约 {minutes} 分钟读完"
+  },
   "search": {
     "placeholder": "搜索事件、人物、论文...",
     "title": "搜索",

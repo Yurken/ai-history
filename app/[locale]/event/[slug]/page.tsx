@@ -1,5 +1,7 @@
 import { notFound } from 'next/navigation';
 import { events } from '@/lib/data/events';
+import { getEventNotes } from '@/lib/data/event-notes';
+import EventNotes from '@/components/event/EventNotes';
 import { Link } from '@/i18n/routing';
 import { getTranslations } from 'next-intl/server';
 
@@ -37,9 +39,11 @@ export default async function EventPage({ params }: EventPageProps) {
   }
 
   const categoryLabel = await getTranslations({ locale, namespace: 'event' });
+  const notesLabel = await getTranslations({ locale, namespace: 'eventNotes' });
   const title = locale === 'zh' ? event.title_zh : event.title_en;
   const description = locale === 'zh' ? event.description_zh : event.description_en;
   const content = locale === 'zh' ? event.content_zh : event.content_en;
+  const notes = getEventNotes(event);
 
   return (
     <div className="min-h-screen bg-white dark:bg-dark-950">
@@ -91,14 +95,21 @@ export default async function EventPage({ params }: EventPageProps) {
             </div>
           )}
 
-          {/* 内容 */}
+          {/* 内容：有详细笔记时展示事件概述 + 学习笔记，否则仅展示原有摘要 */}
           {content && (
-            <div className="prose prose-lg dark:prose-invert max-w-none mb-12">
-              <p className="text-xl leading-relaxed text-gray-700 dark:text-gray-300 whitespace-pre-line">
-                {content}
-              </p>
+            <div className="mb-12">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                {notesLabel('overview')}
+              </h2>
+              <div className="prose prose-lg dark:prose-invert max-w-none">
+                <p className="text-xl leading-relaxed text-gray-700 dark:text-gray-300 whitespace-pre-line">
+                  {content}
+                </p>
+              </div>
             </div>
           )}
+
+          {notes && <EventNotes notes={notes} locale={locale} />}
 
           {/* 链接 */}
           {event.links && event.links.length > 0 && (

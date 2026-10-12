@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test": "node --import tsx --test tests/search.test.ts tests/timeline.test.ts tests/knowledge.test.ts",
+    "test": "node --import tsx --test tests/search.test.ts tests/timeline.test.ts tests/knowledge.test.ts tests/notes.test.ts",
     "search:index": "node --import tsx lib/search/index.ts",
     "predev": "npm run search:index",
     "prebuild": "npm run search:index"
