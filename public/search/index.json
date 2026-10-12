@@ -1,5 +1,37 @@
 [
   {
+    "id": "mcculloch-pitts-1943",
+    "title_zh": "McCulloch-Pitts 神经元模型",
+    "title_en": "McCulloch-Pitts Neuron Model",
+    "description_zh": "Warren McCulloch 和 Walter Pitts 提出第一个数学神经元模型，为神经网络奠定理论基础。",
+    "description_en": "Warren McCulloch and Walter Pitts propose the first mathematical neuron model, laying the theoretical foundation for neural networks.",
+    "tags": [
+      "neural-networks",
+      "foundation",
+      "neuron",
+      "computing"
+    ],
+    "category": "paper",
+    "year": 1943,
+    "slug": "mcculloch-pitts-neuron-1943"
+  },
+  {
+    "id": "shannon-chess-1950",
+    "title_zh": "香农论计算机下棋",
+    "title_en": "Shannon on Computer Chess",
+    "description_zh": "Claude Shannon 发表《Programming a Computer for Playing Chess》，开创计算机博弈论。",
+    "description_en": "Claude Shannon publishes \"Programming a Computer for Playing Chess\", pioneering computer game theory.",
+    "tags": [
+      "game-ai",
+      "chess",
+      "search",
+      "shannon"
+    ],
+    "category": "paper",
+    "year": 1950,
+    "slug": "shannon-chess-programming-1950"
+  },
+  {
     "id": "turing-1950",
     "title_zh": "图灵测试",
     "title_en": "Turing Test",
@@ -13,6 +45,38 @@
     "category": "paper",
     "year": 1950,
     "slug": "turing-test-1950"
+  },
+  {
+    "id": "samuel-checkers-1952",
+    "title_zh": "Samuel 跳棋程序",
+    "title_en": "Samuel's Checkers Program",
+    "description_zh": "Arthur Samuel 开发 IBM 第一个跳棋程序，首次实现机器自学习概念。",
+    "description_en": "Arthur Samuel develops IBM's first checkers program, pioneering the concept of machine self-learning.",
+    "tags": [
+      "game-ai",
+      "machine-learning",
+      "ibm",
+      "checkers"
+    ],
+    "category": "software",
+    "year": 1952,
+    "slug": "samuel-checkers-program-1952"
+  },
+  {
+    "id": "logic-theorist-1956",
+    "title_zh": "Logic Theorist：首个AI程序",
+    "title_en": "Logic Theorist: First AI Program",
+    "description_zh": "Allen Newell 和 Herbert Simon 创造 Logic Theorist，第一个能证明数学定理的AI程序。",
+    "description_en": "Allen Newell and Herbert Simon create Logic Theorist, the first AI program capable of proving mathematical theorems.",
+    "tags": [
+      "theorem-proving",
+      "heuristic-search",
+      "newell",
+      "simon"
+    ],
+    "category": "software",
+    "year": 1956,
+    "slug": "logic-theorist-1956"
   },
   {
     "id": "dartmouth-1956",
@@ -29,6 +93,103 @@
     "category": "conference",
     "year": 1956,
     "slug": "dartmouth-workshop-1956"
+  },
+  {
+    "id": "perceptron-hardware-1958",
+    "title_zh": "感知机：首个神经计算机",
+    "title_en": "Perceptron: First Neural Computer",
+    "description_zh": "Frank Rosenblatt 发明感知机 Mark I，首个基于神经网络原理的硬件实现。",
+    "description_en": "Frank Rosenblatt invents the Perceptron Mark I, the first hardware implementation based on neural network principles.",
+    "tags": [
+      "neural-networks",
+      "perceptron",
+      "hardware",
+      "rosenblatt"
+    ],
+    "category": "milestone",
+    "year": 1958,
+    "slug": "perceptron-hardware-1958"
+  },
+  {
+    "id": "lisp-1958",
+    "title_zh": "LISP 语言诞生",
+    "title_en": "LISP Language Born",
+    "description_zh": "John McCarthy 创建 LISP，成为人工智能研究的主流编程语言长达数十年。",
+    "description_en": "John McCarthy creates LISP, becoming the dominant programming language for AI research for decades.",
+    "tags": [
+      "programming-language",
+      "lisp",
+      "mccarthy",
+      "symbolic-ai"
+    ],
+    "category": "software",
+    "year": 1958,
+    "slug": "lisp-language-1958"
+  },
+  {
+    "id": "gps-1959",
+    "title_zh": "GPS：通用问题求解器",
+    "title_en": "GPS: General Problem Solver",
+    "description_zh": "Newell 和 Simon 开发 GPS，首个尝试模拟人类问题求解过程的程序。",
+    "description_en": "Newell and Simon develop GPS, the first program attempting to simulate human problem-solving processes.",
+    "tags": [
+      "problem-solving",
+      "symbolic-ai",
+      "newell",
+      "simon"
+    ],
+    "category": "software",
+    "year": 1959,
+    "slug": "general-problem-solver-1959"
+  },
+  {
+    "id": "machine-learning-term-1959",
+    "title_zh": "\"机器学习\"术语诞生",
+    "title_en": "\"Machine Learning\" Term Coined",
+    "description_zh": "Arthur Samuel 正式提出\"机器学习\"术语，定义为\"让计算机无需显式编程就能学习的能力\"。",
+    "description_en": "Arthur Samuel formally coins the term \"Machine Learning\", defining it as \"the field of study that gives computers the ability to learn without being explicitly programmed.\"",
+    "tags": [
+      "machine-learning",
+      "samuel",
+      "terminology",
+      "history"
+    ],
+    "category": "milestone",
+    "year": 1959,
+    "slug": "machine-learning-term-1959"
+  },
+  {
+    "id": "dendral-1965",
+    "title_zh": "DENDRAL：首个专家系统",
+    "title_en": "DENDRAL: First Expert System",
+    "description_zh": "Edward Feigenbaum 等人开发 DENDRAL，首个基于知识的专家系统，用于推断分子结构。",
+    "description_en": "Edward Feigenbaum and colleagues develop DENDRAL, the first knowledge-based expert system for inferring molecular structures.",
+    "tags": [
+      "expert-systems",
+      "knowledge-engineering",
+      "chemistry",
+      "stanford"
+    ],
+    "category": "software",
+    "year": 1965,
+    "slug": "dendral-expert-system-1965"
+  },
+  {
+    "id": "shakey-1969",
+    "title_zh": "SHAKEY：首个移动智能机器人",
+    "title_en": "SHAKEY: First Mobile Intelligent Robot",
+    "description_zh": "斯坦福研究院开发 SHAKEY 机器人，首个能够感知环境并自主行动的移动机器人。",
+    "description_en": "Stanford Research Institute develops SHAKEY, the first mobile robot capable of perceiving its environment and acting autonomously.",
+    "tags": [
+      "robotics",
+      "planning",
+      "perception",
+      "sri",
+      "a-star"
+    ],
+    "category": "milestone",
+    "year": 1969,
+    "slug": "shakey-robot-1969"
   },
   {
     "id": "eliza-1966",
@@ -61,6 +222,167 @@
     "slug": "perceptrons-book-1969"
   },
   {
+    "id": "prolog-1970",
+    "title_zh": "Prolog 语言诞生",
+    "title_en": "Prolog Language Born",
+    "description_zh": "Alain Colmerauer 在马赛大学开发 Prolog，开创逻辑编程范式。",
+    "description_en": "Alain Colmerauer develops Prolog at University of Marseille, pioneering the logic programming paradigm.",
+    "tags": [
+      "programming-language",
+      "logic-programming",
+      "declarative",
+      "symbolic-ai"
+    ],
+    "category": "software",
+    "year": 1970,
+    "slug": "prolog-language-1970"
+  },
+  {
+    "id": "lighthill-report-1972",
+    "title_zh": "Lighthill 报告与第一次AI寒冬",
+    "title_en": "Lighthill Report and the First AI Winter",
+    "description_zh": "英国科学家 James Lighthill 发表批评报告，导致 AI 研究资金大幅削减，开启第一次 AI 寒冬。",
+    "description_en": "British scientist James Lighthill publishes a critical report, leading to massive funding cuts for AI research and starting the first AI Winter.",
+    "tags": [
+      "ai-winter",
+      "funding",
+      "history",
+      "uk"
+    ],
+    "category": "milestone",
+    "year": 1972,
+    "slug": "lighthill-report-ai-winter-1972"
+  },
+  {
+    "id": "stanford-cart-1979",
+    "title_zh": "Stanford Cart：自动驾驶先驱",
+    "title_en": "Stanford Cart: Autonomous Driving Pioneer",
+    "description_zh": "斯坦福 Cart 在 Hans Moravec 领导下实现自主导航，通过立体视觉穿越障碍环境。",
+    "description_en": "Stanford Cart achieves autonomous navigation under Hans Moravec, traversing obstacle courses using stereo vision.",
+    "tags": [
+      "autonomous-vehicles",
+      "computer-vision",
+      "robotics",
+      "stanford"
+    ],
+    "category": "milestone",
+    "year": 1979,
+    "slug": "stanford-cart-autonomous-vehicle-1979"
+  },
+  {
+    "id": "fifth-generation-1980",
+    "title_zh": "日本第五代计算机项目",
+    "title_en": "Japanese Fifth Generation Computer Project",
+    "description_zh": "日本启动第五代计算机系统项目，投资巨额研发智能计算机，引发全球 AI 竞赛。",
+    "description_en": "Japan launches the Fifth Generation Computer Systems project, investing heavily in intelligent computers and sparking a global AI race.",
+    "tags": [
+      "fifth-generation",
+      "japan",
+      "parallel-computing",
+      "prolog"
+    ],
+    "category": "milestone",
+    "year": 1980,
+    "slug": "fifth-generation-computer-project-1980"
+  },
+  {
+    "id": "mycin-1981",
+    "title_zh": "MYCIN：医疗诊断专家系统",
+    "title_en": "MYCIN: Medical Diagnosis Expert System",
+    "description_zh": "斯坦福大学开发的 MYCIN 专家系统在血液感染诊断上达到专家水平。",
+    "description_en": "MYCIN expert system developed at Stanford achieves expert-level performance in diagnosing blood infections.",
+    "tags": [
+      "expert-systems",
+      "medicine",
+      "diagnosis",
+      "stanford"
+    ],
+    "category": "software",
+    "year": 1981,
+    "slug": "mycin-medical-diagnosis-1981"
+  },
+  {
+    "id": "soar-1983",
+    "title_zh": "Soar 认知架构",
+    "title_en": "Soar Cognitive Architecture",
+    "description_zh": "John Laird、Allen Newell 和 Paul Rosenbloom 开发 Soar，通用认知架构的重要尝试。",
+    "description_en": "John Laird, Allen Newell, and Paul Rosenbloom develop Soar, an important attempt at a general cognitive architecture.",
+    "tags": [
+      "cognitive-architecture",
+      "unified-theory",
+      "cmu",
+      "newell"
+    ],
+    "category": "software",
+    "year": 1983,
+    "slug": "soar-cognitive-architecture-1983"
+  },
+  {
+    "id": "backpropagation-1986",
+    "title_zh": "反向传播算法复兴",
+    "title_en": "Backpropagation Algorithm Revival",
+    "description_zh": "Rumelhart、Hinton 和 Williams 推广反向传播算法，神经网络研究重新兴起。",
+    "description_en": "Rumelbart, Hinton, and Williams popularize the backpropagation algorithm, reviving neural network research.",
+    "tags": [
+      "neural-networks",
+      "backpropagation",
+      "hinton",
+      "deep-learning"
+    ],
+    "category": "paper",
+    "year": 1986,
+    "slug": "backpropagation-algorithm-1986"
+  },
+  {
+    "id": "ai-winter-1987",
+    "title_zh": "Lisp 机崩溃与第二次AI寒冬",
+    "title_en": "Lisp Machine Crash and the Second AI Winter",
+    "description_zh": "专用 Lisp 机市场崩溃，AI 硬件公司纷纷倒闭，开启第二次 AI 寒冬。",
+    "description_en": "Dedicated Lisp machine market collapses, AI hardware companies fail, starting the second AI Winter.",
+    "tags": [
+      "ai-winter",
+      "lisp",
+      "expert-systems",
+      "history"
+    ],
+    "category": "milestone",
+    "year": 1987,
+    "slug": "second-ai-winter-lisp-machine-crash-1987"
+  },
+  {
+    "id": "lecun-cnn-1989",
+    "title_zh": "LeCun 卷积神经网络手写识别",
+    "title_en": "LeCun CNN for Handwriting Recognition",
+    "description_zh": "Yann LeCun 在贝尔实验室开发卷积神经网络，成功应用于手写数字识别。",
+    "description_en": "Yann LeCun at Bell Labs develops convolutional neural networks, successfully applying them to handwritten digit recognition.",
+    "tags": [
+      "cnn",
+      "computer-vision",
+      "lecun",
+      "deep-learning",
+      "handwriting"
+    ],
+    "category": "model",
+    "year": 1989,
+    "slug": "lecun-cnn-handwriting-1989"
+  },
+  {
+    "id": "q-learning-1989",
+    "title_zh": "Q-learning 算法",
+    "title_en": "Q-learning Algorithm",
+    "description_zh": "Chris Watkins 提出 Q-learning，成为强化学习领域最基础和广泛使用的算法之一。",
+    "description_en": "Chris Watkins proposes Q-learning, becoming one of the most fundamental and widely used algorithms in reinforcement learning.",
+    "tags": [
+      "reinforcement-learning",
+      "q-learning",
+      "decision-making",
+      "algorithm"
+    ],
+    "category": "paper",
+    "year": 1989,
+    "slug": "q-learning-algorithm-1989"
+  },
+  {
     "id": "xcon-1980",
     "title_zh": "XCON：专家系统的商业成功",
     "title_en": "XCON: Commercial Success of Expert Systems",
@@ -74,6 +396,72 @@
     "category": "software",
     "year": 1980,
     "slug": "xcon-expert-system-1980"
+  },
+  {
+    "id": "svm-1995",
+    "title_zh": "支持向量机（SVM）",
+    "title_en": "Support Vector Machine (SVM)",
+    "description_zh": "Vapnik 等人完善 SVM 理论，成为机器学习领域最重要的算法之一。",
+    "description_en": "Vapnik and colleagues refine SVM theory, becoming one of the most important algorithms in machine learning.",
+    "tags": [
+      "machine-learning",
+      "svm",
+      "statistical-learning",
+      "classification"
+    ],
+    "category": "paper",
+    "year": 1995,
+    "slug": "support-vector-machine-1995"
+  },
+  {
+    "id": "lstm-1997",
+    "title_zh": "LSTM 神经网络",
+    "title_en": "LSTM Neural Network",
+    "description_zh": "Hochreiter 和 Schmidhuber 提出 LSTM，解决循环神经网络的长期依赖问题。",
+    "description_en": "Hochreiter and Schmidhuber propose LSTM, solving the long-term dependency problem of recurrent neural networks.",
+    "tags": [
+      "neural-networks",
+      "lstm",
+      "sequence-modeling",
+      "deep-learning"
+    ],
+    "category": "paper",
+    "year": 1997,
+    "slug": "long-short-term-memory-1997"
+  },
+  {
+    "id": "lenet-1998",
+    "title_zh": "LeNet-5 与 MNIST",
+    "title_en": "LeNet-5 and MNIST",
+    "description_zh": "Yann LeCun 发表 LeNet-5 架构和 MNIST 数据集，成为深度学习经典基准。",
+    "description_en": "Yann LeCun publishes LeNet-5 architecture and MNIST dataset, becoming classic benchmarks for deep learning.",
+    "tags": [
+      "cnn",
+      "mnist",
+      "lecun",
+      "deep-learning",
+      "benchmark"
+    ],
+    "category": "model",
+    "year": 1998,
+    "slug": "lenet-5-mnist-1998"
+  },
+  {
+    "id": "pagerank-1998",
+    "title_zh": "PageRank 算法",
+    "title_en": "PageRank Algorithm",
+    "description_zh": "Larry Page 和 Sergey Brin 发明 PageRank，奠定 Google 搜索引擎的核心技术。",
+    "description_en": "Larry Page and Sergey Brin invent PageRank, laying the core technology foundation for Google search engine.",
+    "tags": [
+      "search",
+      "google",
+      "algorithm",
+      "web",
+      "information-retrieval"
+    ],
+    "category": "paper",
+    "year": 1998,
+    "slug": "pagerank-google-1998"
   },
   {
     "id": "deep-blue-1997",
@@ -91,6 +479,71 @@
     "slug": "deep-blue-chess-1997"
   },
   {
+    "id": "random-forest-2001",
+    "title_zh": "随机森林算法",
+    "title_en": "Random Forest Algorithm",
+    "description_zh": "Leo Breiman 提出随机森林，成为机器学习领域最成功的集成学习方法之一。",
+    "description_en": "Leo Breiman proposes Random Forest, becoming one of the most successful ensemble learning methods in machine learning.",
+    "tags": [
+      "machine-learning",
+      "random-forest",
+      "ensemble-learning",
+      "decision-tree"
+    ],
+    "category": "paper",
+    "year": 2001,
+    "slug": "random-forest-algorithm-2001"
+  },
+  {
+    "id": "roomba-2002",
+    "title_zh": "Roomba 家用机器人",
+    "title_en": "Roomba Home Robot",
+    "description_zh": "iRobot 推出 Roomba 家用扫地机器人，成为最成功的消费级机器人产品。",
+    "description_en": "iRobot launches Roomba home vacuum robot, becoming the most successful consumer robot product.",
+    "tags": [
+      "robotics",
+      "consumer-product",
+      "irobot",
+      "home-automation"
+    ],
+    "category": "product",
+    "year": 2002,
+    "slug": "roomba-robot-vacuum-2002"
+  },
+  {
+    "id": "deep-belief-network-2006",
+    "title_zh": "深度信念网络：深度学习复兴",
+    "title_en": "Deep Belief Network: Deep Learning Revival",
+    "description_zh": "Geoffrey Hinton 提出深度信念网络，开创深度学习训练的有效方法。",
+    "description_en": "Geoffrey Hinton proposes Deep Belief Networks, pioneering effective methods for training deep learning.",
+    "tags": [
+      "deep-learning",
+      "hinton",
+      "neural-networks",
+      "pretraining"
+    ],
+    "category": "paper",
+    "year": 2006,
+    "slug": "hinton-deep-belief-network-2006"
+  },
+  {
+    "id": "imagenet-2009",
+    "title_zh": "ImageNet 数据集",
+    "title_en": "ImageNet Dataset",
+    "description_zh": "Fei-Fei Li 团队发布 ImageNet 大规模图像数据集，成为深度学习发展的关键基础设施。",
+    "description_en": "Fei-Fei Li's team releases ImageNet large-scale image dataset, becoming key infrastructure for deep learning development.",
+    "tags": [
+      "dataset",
+      "imagenet",
+      "computer-vision",
+      "stanford",
+      "fei-fei-li"
+    ],
+    "category": "milestone",
+    "year": 2009,
+    "slug": "imagenet-dataset-2009"
+  },
+  {
     "id": "alexnet-2012",
     "title_zh": "AlexNet：深度学习突破",
     "title_en": "AlexNet: Deep Learning Breakthrough",
@@ -105,6 +558,40 @@
     "category": "model",
     "year": 2012,
     "slug": "alexnet-2012"
+  },
+  {
+    "id": "watson-jeopardy-2011",
+    "title_zh": "Watson 战胜 Jeopardy 人类冠军",
+    "title_en": "Watson Defeats Jeopardy Human Champions",
+    "description_zh": "IBM Watson 在知识问答节目 Jeopardy 中击败人类冠军，展示自然语言理解的突破。",
+    "description_en": "IBM Watson defeats human champions in the quiz show Jeopardy, demonstrating breakthrough in natural language understanding.",
+    "tags": [
+      "nlp",
+      "qa-system",
+      "ibm",
+      "watson",
+      "jeopardy"
+    ],
+    "category": "milestone",
+    "year": 2011,
+    "slug": "ibm-watson-jeopardy-2011"
+  },
+  {
+    "id": "word2vec-2013",
+    "title_zh": "Word2Vec：词嵌入革命",
+    "title_en": "Word2Vec: Word Embedding Revolution",
+    "description_zh": "Google 的 Tomas Mikolov 发布 Word2Vec，开创词嵌入技术的新时代。",
+    "description_en": "Google's Tomas Mikolov releases Word2Vec, pioneering a new era of word embedding technology.",
+    "tags": [
+      "nlp",
+      "word-embedding",
+      "word2vec",
+      "google",
+      "representation-learning"
+    ],
+    "category": "model",
+    "year": 2013,
+    "slug": "word2vec-google-2013"
   },
   {
     "id": "alphago-2016",
@@ -138,6 +625,407 @@
     "slug": "attention-is-all-you-need-2017"
   },
   {
+    "id": "gan-2014",
+    "title_zh": "GAN：生成对抗网络",
+    "title_en": "GAN: Generative Adversarial Networks",
+    "description_zh": "Ian Goodfellow 提出生成对抗网络，开创深度生成模型的新范式。",
+    "description_en": "Ian Goodfellow proposes Generative Adversarial Networks, pioneering a new paradigm for deep generative models.",
+    "tags": [
+      "generative-ai",
+      "gan",
+      "deep-learning",
+      "goodfellow"
+    ],
+    "category": "paper",
+    "year": 2014,
+    "slug": "generative-adversarial-networks-2014"
+  },
+  {
+    "id": "dropout-2014",
+    "title_zh": "Dropout 正则化",
+    "title_en": "Dropout Regularization",
+    "description_zh": "Geoffrey Hinton 等人提出 Dropout 技术，有效防止神经网络过拟合。",
+    "description_en": "Geoffrey Hinton and colleagues propose Dropout technique, effectively preventing neural network overfitting.",
+    "tags": [
+      "deep-learning",
+      "regularization",
+      "hinton",
+      "neural-networks"
+    ],
+    "category": "paper",
+    "year": 2014,
+    "slug": "dropout-regularization-2014"
+  },
+  {
+    "id": "vgg-2014",
+    "title_zh": "VGGNet：深层卷积网络",
+    "title_en": "VGGNet: Very Deep Convolutional Networks",
+    "description_zh": "牛津大学 VGG 团队提出 VGGNet，证明小卷积核堆叠可以构建更深的网络。",
+    "description_en": "Oxford VGG team proposes VGGNet, demonstrating that stacking small convolution kernels can build deeper networks.",
+    "tags": [
+      "cnn",
+      "deep-learning",
+      "computer-vision",
+      "vgg",
+      "oxford"
+    ],
+    "category": "model",
+    "year": 2014,
+    "slug": "vgg-net-2014"
+  },
+  {
+    "id": "attention-mechanism-2014",
+    "title_zh": "注意力机制：序列对齐新方法",
+    "title_en": "Attention Mechanism: New Approach to Sequence Alignment",
+    "description_zh": "Dzmitry Bahdanau 等人提出注意力机制，解决序列到序列模型的长距离依赖问题。",
+    "description_en": "Dzmitry Bahdanau and colleagues propose attention mechanism, solving long-range dependency problem in sequence-to-sequence models.",
+    "tags": [
+      "attention",
+      "nlp",
+      "machine-translation",
+      "sequence-to-sequence"
+    ],
+    "category": "paper",
+    "year": 2014,
+    "slug": "bahdanau-attention-2014"
+  },
+  {
+    "id": "resnet-2015",
+    "title_zh": "ResNet：残差网络突破",
+    "title_en": "ResNet: Residual Networks Breakthrough",
+    "description_zh": "微软研究院提出 ResNet，通过残差连接解决深度网络训练难题。",
+    "description_en": "Microsoft Research proposes ResNet, solving deep network training difficulties through residual connections.",
+    "tags": [
+      "cnn",
+      "deep-learning",
+      "resnet",
+      "residual-learning",
+      "microsoft"
+    ],
+    "category": "model",
+    "year": 2015,
+    "slug": "residual-networks-2015"
+  },
+  {
+    "id": "openai-founded-2015",
+    "title_zh": "OpenAI 成立",
+    "title_en": "OpenAI Founded",
+    "description_zh": "Elon Musk、Sam Altman 等人创立 OpenAI，致力于开发安全的人工通用智能。",
+    "description_en": "Elon Musk, Sam Altman, and others found OpenAI, dedicated to developing safe artificial general intelligence.",
+    "tags": [
+      "openai",
+      "organization",
+      "agi",
+      "history"
+    ],
+    "category": "milestone",
+    "year": 2015,
+    "slug": "openai-foundation-2015"
+  },
+  {
+    "id": "tensorflow-2015",
+    "title_zh": "TensorFlow 开源",
+    "title_en": "TensorFlow Open Sourced",
+    "description_zh": "Google 开源 TensorFlow 深度学习框架，成为最流行的机器学习平台之一。",
+    "description_en": "Google open sources TensorFlow deep learning framework, becoming one of the most popular machine learning platforms.",
+    "tags": [
+      "tensorflow",
+      "deep-learning",
+      "framework",
+      "google",
+      "open-source"
+    ],
+    "category": "software",
+    "year": 2015,
+    "slug": "tensorflow-open-source-2015"
+  },
+  {
+    "id": "speech-recognition-human-parity-2016",
+    "title_zh": "微软语音识别达人类水平",
+    "title_en": "Microsoft Speech Recognition Reaches Human Parity",
+    "description_zh": "微软宣布其语音识别系统在 Switchboard 基准测试中达到人类水平。",
+    "description_en": "Microsoft announces its speech recognition system achieves human parity on Switchboard benchmark.",
+    "tags": [
+      "speech-recognition",
+      "microsoft",
+      "deep-learning",
+      "human-parity"
+    ],
+    "category": "milestone",
+    "year": 2016,
+    "slug": "microsoft-speech-recognition-human-parity-2016"
+  },
+  {
+    "id": "alphago-zero-2017",
+    "title_zh": "AlphaGo Zero：无需人类知识",
+    "title_en": "AlphaGo Zero: No Human Knowledge Required",
+    "description_zh": "DeepMind 发布 AlphaGo Zero，仅通过自我对弈学习，超越所有围棋AI。",
+    "description_en": "DeepMind releases AlphaGo Zero, learning only through self-play and surpassing all Go AI.",
+    "tags": [
+      "reinforcement-learning",
+      "go",
+      "deepmind",
+      "self-play",
+      "alphago"
+    ],
+    "category": "model",
+    "year": 2017,
+    "slug": "alphago-zero-2017"
+  },
+  {
+    "id": "pytorch-2017",
+    "title_zh": "PyTorch 发布",
+    "title_en": "PyTorch Released",
+    "description_zh": "Facebook 发布 PyTorch 深度学习框架，以其动态计算图特性赢得研究者青睐。",
+    "description_en": "Facebook releases PyTorch deep learning framework, winning researchers over with its dynamic computation graph.",
+    "tags": [
+      "pytorch",
+      "deep-learning",
+      "framework",
+      "facebook",
+      "open-source"
+    ],
+    "category": "software",
+    "year": 2017,
+    "slug": "pytorch-release-2017"
+  },
+  {
+    "id": "bert-2018",
+    "title_zh": "BERT：双向语言理解",
+    "title_en": "BERT: Bidirectional Language Understanding",
+    "description_zh": "Google 提出 BERT，通过双向 Transformer 实现突破性的语言理解能力。",
+    "description_en": "Google proposes BERT, achieving breakthrough language understanding through bidirectional Transformers.",
+    "tags": [
+      "nlp",
+      "bert",
+      "transformer",
+      "pre-training",
+      "google"
+    ],
+    "category": "model",
+    "year": 2018,
+    "slug": "bert-language-model-2018"
+  },
+  {
+    "id": "gpt-1-2018",
+    "title_zh": "GPT-1：生成式预训练",
+    "title_en": "GPT-1: Generative Pre-Training",
+    "description_zh": "OpenAI 发布 GPT-1，首次展示生成式预训练在语言理解任务上的潜力。",
+    "description_en": "OpenAI releases GPT-1, first demonstrating the potential of generative pre-training on language understanding tasks.",
+    "tags": [
+      "nlp",
+      "gpt",
+      "transformer",
+      "pre-training",
+      "openai"
+    ],
+    "category": "model",
+    "year": 2018,
+    "slug": "gpt-1-openai-2018"
+  },
+  {
+    "id": "stylegan-2018",
+    "title_zh": "StyleGAN：高质量图像生成",
+    "title_en": "StyleGAN: High-Quality Image Generation",
+    "description_zh": "NVIDIA 提出 StyleGAN，生成前所未有高质量的人脸图像。",
+    "description_en": "NVIDIA proposes StyleGAN, generating unprecedented high-quality face images.",
+    "tags": [
+      "generative-ai",
+      "gan",
+      "stylegan",
+      "nvidia",
+      "computer-vision"
+    ],
+    "category": "model",
+    "year": 2018,
+    "slug": "stylegan-nvidia-2018"
+  },
+  {
+    "id": "gpt-2-2019",
+    "title_zh": "GPT-2：更好的语言模型",
+    "title_en": "GPT-2: Better Language Models",
+    "description_zh": "OpenAI 发布 GPT-2，因担心滥用而分阶段发布，展现大模型涌现能力。",
+    "description_en": "OpenAI releases GPT-2 in stages due to misuse concerns, demonstrating emergent capabilities of large models.",
+    "tags": [
+      "nlp",
+      "gpt",
+      "llm",
+      "openai",
+      "ai-safety"
+    ],
+    "category": "model",
+    "year": 2019,
+    "slug": "gpt-2-openai-2019"
+  },
+  {
+    "id": "openai-five-2019",
+    "title_zh": "OpenAI Five：Dota2 AI冠军",
+    "title_en": "OpenAI Five: Dota2 AI Champion",
+    "description_zh": "OpenAI Five 击败 Dota2 世界冠军战队，展示 AI 在复杂团队游戏中的能力。",
+    "description_en": "OpenAI Five defeats Dota2 world champion team, demonstrating AI capability in complex team games.",
+    "tags": [
+      "reinforcement-learning",
+      "game-ai",
+      "dota2",
+      "openai",
+      "self-play"
+    ],
+    "category": "milestone",
+    "year": 2019,
+    "slug": "openai-five-dota2-2019"
+  },
+  {
+    "id": "gpt-3-2020",
+    "title_zh": "GPT-3：规模即能力",
+    "title_en": "GPT-3: Scale is All You Need",
+    "description_zh": "OpenAI 发布拥有1750亿参数的 GPT-3，展示大规模语言模型的涌现能力。",
+    "description_en": "OpenAI releases GPT-3 with 175 billion parameters, demonstrating emergent capabilities of large-scale language models.",
+    "tags": [
+      "nlp",
+      "gpt",
+      "llm",
+      "openai",
+      "scaling-laws"
+    ],
+    "category": "model",
+    "year": 2020,
+    "slug": "gpt-3-openai-2020"
+  },
+  {
+    "id": "alphafold2-2020",
+    "title_zh": "AlphaFold2：蛋白质折叠突破",
+    "title_en": "AlphaFold2: Protein Folding Breakthrough",
+    "description_zh": "DeepMind 的 AlphaFold2 在 CASP14 竞赛中达到实验精度，解决50年生物学难题。",
+    "description_en": "DeepMind's AlphaFold2 achieves experimental accuracy in CASP14, solving a 50-year biology challenge.",
+    "tags": [
+      "biology",
+      "protein-folding",
+      "deepmind",
+      "scientific-discovery"
+    ],
+    "category": "model",
+    "year": 2020,
+    "slug": "alphafold2-protein-structure-2020"
+  },
+  {
+    "id": "dall-e-2021",
+    "title_zh": "DALL·E：文本到图像",
+    "title_en": "DALL·E: Text to Image",
+    "description_zh": "OpenAI 发布 DALL·E，首次实现从文本描述生成高质量图像。",
+    "description_en": "OpenAI releases DALL·E, first achieving high-quality image generation from text descriptions.",
+    "tags": [
+      "generative-ai",
+      "text-to-image",
+      "dall-e",
+      "openai",
+      "multimodal"
+    ],
+    "category": "model",
+    "year": 2021,
+    "slug": "dall-e-openai-2021"
+  },
+  {
+    "id": "clip-2021",
+    "title_zh": "CLIP：连接视觉与语言",
+    "title_en": "CLIP: Connecting Vision and Language",
+    "description_zh": "OpenAI 发布 CLIP，通过对比学习实现强大的视觉-语言理解能力。",
+    "description_en": "OpenAI releases CLIP, achieving powerful vision-language understanding through contrastive learning.",
+    "tags": [
+      "multimodal",
+      "clip",
+      "vision-language",
+      "openai",
+      "zero-shot"
+    ],
+    "category": "model",
+    "year": 2021,
+    "slug": "clip-openai-2021"
+  },
+  {
+    "id": "github-copilot-2021",
+    "title_zh": "GitHub Copilot：AI 编程助手",
+    "title_en": "GitHub Copilot: AI Programming Assistant",
+    "description_zh": "GitHub 与 OpenAI 发布 Copilot，开创 AI 辅助编程新时代。",
+    "description_en": "GitHub and OpenAI release Copilot, pioneering a new era of AI-assisted programming.",
+    "tags": [
+      "code-generation",
+      "copilot",
+      "openai",
+      "github",
+      "developer-tools"
+    ],
+    "category": "product",
+    "year": 2021,
+    "slug": "github-copilot-launch-2021"
+  },
+  {
+    "id": "stable-diffusion-2022",
+    "title_zh": "Stable Diffusion：开源图像生成",
+    "title_en": "Stable Diffusion: Open Source Image Generation",
+    "description_zh": "Stability AI 发布开源的 Stable Diffusion，引爆文本到图像生成革命。",
+    "description_en": "Stability AI releases open-source Stable Diffusion, sparking the text-to-image generation revolution.",
+    "tags": [
+      "generative-ai",
+      "text-to-image",
+      "stable-diffusion",
+      "open-source",
+      "diffusion"
+    ],
+    "category": "model",
+    "year": 2022,
+    "slug": "stable-diffusion-2022"
+  },
+  {
+    "id": "midjourney-2022",
+    "title_zh": "Midjourney：艺术图像生成",
+    "title_en": "Midjourney: Artistic Image Generation",
+    "description_zh": "Midjourney 发布，以独特的艺术风格生成能力赢得设计师青睐。",
+    "description_en": "Midjourney releases, winning designers' favor with unique artistic style generation capabilities.",
+    "tags": [
+      "generative-ai",
+      "text-to-image",
+      "midjourney",
+      "art"
+    ],
+    "category": "product",
+    "year": 2022,
+    "slug": "midjourney-launch-2022"
+  },
+  {
+    "id": "dall-e-2-2022",
+    "title_zh": "DALL·E 2：高分辨率图像生成",
+    "title_en": "DALL·E 2: High-Resolution Image Generation",
+    "description_zh": "OpenAI 发布 DALL·E 2，生成更高质量、更逼真的图像。",
+    "description_en": "OpenAI releases DALL·E 2, generating higher quality, more realistic images.",
+    "tags": [
+      "generative-ai",
+      "text-to-image",
+      "dall-e",
+      "openai",
+      "diffusion"
+    ],
+    "category": "model",
+    "year": 2022,
+    "slug": "dall-e-2-openai-2022"
+  },
+  {
+    "id": "instructgpt-2022",
+    "title_zh": "InstructGPT：RLHF 的突破",
+    "title_en": "InstructGPT: RLHF Breakthrough",
+    "description_zh": "OpenAI 发布 InstructGPT，展示人类反馈强化学习对齐语言模型的方法。",
+    "description_en": "OpenAI releases InstructGPT, demonstrating alignment of language models through Reinforcement Learning from Human Feedback.",
+    "tags": [
+      "rlhf",
+      "alignment",
+      "instructgpt",
+      "openai",
+      "llm"
+    ],
+    "category": "paper",
+    "year": 2022,
+    "slug": "instructgpt-rlhf-2022"
+  },
+  {
     "id": "chatgpt-2022",
     "title_zh": "ChatGPT发布",
     "title_en": "ChatGPT Launch",
@@ -152,6 +1040,107 @@
     "category": "product",
     "year": 2022,
     "slug": "chatgpt-launch-2022"
+  },
+  {
+    "id": "llama-2023",
+    "title_zh": "LLaMA：开源大模型浪潮",
+    "title_en": "LLaMA: Open Source LLM Wave",
+    "description_zh": "Meta 发布 LLaMA 模型，开启开源大语言模型的新时代。",
+    "description_en": "Meta releases LLaMA models, opening a new era of open-source large language models.",
+    "tags": [
+      "llm",
+      "llama",
+      "meta",
+      "open-source",
+      "foundation-model"
+    ],
+    "category": "model",
+    "year": 2023,
+    "slug": "llama-meta-2023"
+  },
+  {
+    "id": "claude-2023",
+    "title_zh": "Claude：安全优先的AI助手",
+    "title_en": "Claude: Safety-First AI Assistant",
+    "description_zh": "Anthropic 发布 Claude，强调 AI 安全和有用性。",
+    "description_en": "Anthropic releases Claude, emphasizing AI safety and helpfulness.",
+    "tags": [
+      "llm",
+      "claude",
+      "anthropic",
+      "ai-safety",
+      "constitutional-ai"
+    ],
+    "category": "model",
+    "year": 2023,
+    "slug": "claude-anthropic-2023"
+  },
+  {
+    "id": "llama-2-2023",
+    "title_zh": "Llama 2：商用开源大模型",
+    "title_en": "Llama 2: Commercial Open-Source LLM",
+    "description_zh": "Meta 发布 Llama 2，首个可商用的开源大语言模型。",
+    "description_en": "Meta releases Llama 2, the first commercially usable open-source large language model.",
+    "tags": [
+      "llm",
+      "llama",
+      "meta",
+      "open-source",
+      "commercial"
+    ],
+    "category": "model",
+    "year": 2023,
+    "slug": "llama-2-meta-2023"
+  },
+  {
+    "id": "mistral-2023",
+    "title_zh": "Mistral 7B：小而强大",
+    "title_en": "Mistral 7B: Small but Powerful",
+    "description_zh": "Mistral AI 发布 Mistral 7B，证明小模型也能达到强大性能。",
+    "description_en": "Mistral AI releases Mistral 7B, proving small models can achieve powerful performance.",
+    "tags": [
+      "llm",
+      "mistral",
+      "efficient-ai",
+      "open-source",
+      "moe"
+    ],
+    "category": "model",
+    "year": 2023,
+    "slug": "mistral-7b-2023"
+  },
+  {
+    "id": "gemini-2023",
+    "title_zh": "Gemini：Google 多模态模型",
+    "title_en": "Gemini: Google Multimodal Model",
+    "description_zh": "Google 发布 Gemini 多模态大模型，原生支持文本、图像、音频和视频。",
+    "description_en": "Google releases Gemini multimodal LLM, natively supporting text, image, audio, and video.",
+    "tags": [
+      "llm",
+      "gemini",
+      "google",
+      "multimodal",
+      "deepmind"
+    ],
+    "category": "model",
+    "year": 2023,
+    "slug": "gemini-google-2023"
+  },
+  {
+    "id": "waymo-2023",
+    "title_zh": "Waymo 全无人驾驶商业许可",
+    "title_en": "Waymo Fully Driverless Commercial License",
+    "description_zh": "Waymo 在旧金山获得全天候全无人驾驶商业运营许可。",
+    "description_en": "Waymo receives 24/7 fully driverless commercial operation permit in San Francisco.",
+    "tags": [
+      "autonomous-driving",
+      "waymo",
+      "self-driving",
+      "transportation"
+    ],
+    "category": "milestone",
+    "year": 2023,
+    "slug": "waymo-driverless-2023"
   },
   {
     "id": "gpt-4-2023",
@@ -169,5 +1158,158 @@
     "category": "model",
     "year": 2023,
     "slug": "gpt-4-launch-2023"
+  },
+  {
+    "id": "sora-2024",
+    "title_zh": "Sora：视频生成突破",
+    "title_en": "Sora: Video Generation Breakthrough",
+    "description_zh": "OpenAI 发布 Sora 视频生成模型，能够生成长达一分钟的高质量视频。",
+    "description_en": "OpenAI releases Sora video generation model, capable of generating up to one minute of high-quality video.",
+    "tags": [
+      "generative-ai",
+      "text-to-video",
+      "sora",
+      "openai",
+      "diffusion"
+    ],
+    "category": "model",
+    "year": 2024,
+    "slug": "sora-openai-2024"
+  },
+  {
+    "id": "claude-3-2024",
+    "title_zh": "Claude 3 系列发布",
+    "title_en": "Claude 3 Series Released",
+    "description_zh": "Anthropic 发布 Claude 3 系列，Opus 版本在多项测试中超越 GPT-4。",
+    "description_en": "Anthropic releases Claude 3 series, with Opus version surpassing GPT-4 on multiple tests.",
+    "tags": [
+      "llm",
+      "claude",
+      "anthropic",
+      "multimodal",
+      "reasoning"
+    ],
+    "category": "model",
+    "year": 2024,
+    "slug": "claude-3-opus-2024"
+  },
+  {
+    "id": "gpt-4o-2024",
+    "title_zh": "GPT-4o：全模态实时交互",
+    "title_en": "GPT-4o: Full Modal Real-time Interaction",
+    "description_zh": "OpenAI 发布 GPT-4o，实现毫秒级响应的多模态实时交互。",
+    "description_en": "OpenAI releases GPT-4o, achieving millisecond-response multimodal real-time interaction.",
+    "tags": [
+      "llm",
+      "gpt",
+      "openai",
+      "multimodal",
+      "real-time"
+    ],
+    "category": "model",
+    "year": 2024,
+    "slug": "gpt-4o-2024"
+  },
+  {
+    "id": "deepseek-v2-2024",
+    "title_zh": "DeepSeek V2：中国开源大模型",
+    "title_en": "DeepSeek V2: Chinese Open-Source LLM",
+    "description_zh": "DeepSeek 发布 V2 模型，以极低成本实现高性能，引领开源模型新方向。",
+    "description_en": "DeepSeek releases V2 model, achieving high performance at extremely low cost, leading new direction in open-source models.",
+    "tags": [
+      "llm",
+      "deepseek",
+      "open-source",
+      "moe",
+      "chinese-ai"
+    ],
+    "category": "model",
+    "year": 2024,
+    "slug": "deepseek-v2-2024"
+  },
+  {
+    "id": "apple-intelligence-2024",
+    "title_zh": "Apple Intelligence：端侧AI",
+    "title_en": "Apple Intelligence: On-Device AI",
+    "description_zh": "Apple 发布 Apple Intelligence，将 AI 能力深度整合到设备端。",
+    "description_en": "Apple releases Apple Intelligence, deeply integrating AI capabilities on-device.",
+    "tags": [
+      "on-device-ai",
+      "apple",
+      "privacy",
+      "consumer-ai",
+      "mobile"
+    ],
+    "category": "product",
+    "year": 2024,
+    "slug": "apple-intelligence-2024"
+  },
+  {
+    "id": "openai-o1-2024",
+    "title_zh": "OpenAI o1：推理能力突破",
+    "title_en": "OpenAI o1: Reasoning Breakthrough",
+    "description_zh": "OpenAI 发布 o1 模型，展示强大的推理和问题解决能力。",
+    "description_en": "OpenAI releases o1 model, demonstrating powerful reasoning and problem-solving capabilities.",
+    "tags": [
+      "llm",
+      "reasoning",
+      "openai",
+      "chain-of-thought",
+      "agi"
+    ],
+    "category": "model",
+    "year": 2024,
+    "slug": "openai-o1-2024"
+  },
+  {
+    "id": "deepseek-r1-2025",
+    "title_zh": "DeepSeek R1：开源推理模型",
+    "title_en": "DeepSeek R1: Open-Source Reasoning Model",
+    "description_zh": "DeepSeek 发布 R1 推理模型，性能媲美 o1，并完全开源。",
+    "description_en": "DeepSeek releases R1 reasoning model, matching o1 performance and fully open-sourced.",
+    "tags": [
+      "llm",
+      "reasoning",
+      "deepseek",
+      "open-source",
+      "reinforcement-learning"
+    ],
+    "category": "model",
+    "year": 2025,
+    "slug": "deepseek-r1-2025"
+  },
+  {
+    "id": "claude-35-2025",
+    "title_zh": "Claude 3.5/4 系列",
+    "title_en": "Claude 3.5/4 Series",
+    "description_zh": "Anthropic 持续更新 Claude 系列，在编程和推理能力上领先。",
+    "description_en": "Anthropic continues updating Claude series, leading in coding and reasoning capabilities.",
+    "tags": [
+      "llm",
+      "claude",
+      "anthropic",
+      "coding",
+      "computer-use"
+    ],
+    "category": "model",
+    "year": 2025,
+    "slug": "claude-35-sonnet-2025"
+  },
+  {
+    "id": "gpt-45-2025",
+    "title_zh": "GPT-4.5/o3：下一代模型",
+    "title_en": "GPT-4.5/o3: Next Generation Models",
+    "description_zh": "OpenAI 发布 GPT-4.5 和 o3 系列，持续推动大模型能力边界。",
+    "description_en": "OpenAI releases GPT-4.5 and o3 series, continuously pushing LLM capability boundaries.",
+    "tags": [
+      "llm",
+      "gpt",
+      "openai",
+      "agi",
+      "reasoning"
+    ],
+    "category": "model",
+    "year": 2025,
+    "slug": "gpt-45-o3-2025"
   }
 ]

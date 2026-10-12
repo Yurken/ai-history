@@ -43,7 +43,7 @@ export const SCROLL_TRIGGER_CONFIG = {
 export function createScrollTrigger(
   element: HTMLElement | string,
   animation: gsap.TweenVars,
-  config?: Partial<gsap.ScrollTrigger.Vars>
+  config?: Partial<ScrollTrigger.Vars>
 ) {
   return ScrollTrigger.create({
     trigger: element,

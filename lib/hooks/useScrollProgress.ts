@@ -1,25 +1,38 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
 export function useScrollProgress() {
   const [progress, setProgress] = useState(0);
+  const pathname = usePathname();
 
   useEffect(() => {
+    let frame = 0;
     const updateProgress = () => {
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
-      const scrollTop = window.pageYOffset;
-      const scrollableHeight = documentHeight - windowHeight;
-      const scrollProgress = (scrollTop / scrollableHeight) * 100;
-      setProgress(Math.min(Math.max(scrollProgress, 0), 100));
+      frame = 0;
+      const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const nextProgress = scrollableHeight > 0 ? (window.scrollY / scrollableHeight) * 100 : 0;
+      setProgress(Math.min(Math.max(nextProgress, 0), 100));
+    };
+    const scheduleUpdate = () => {
+      if (!frame) frame = window.requestAnimationFrame(updateProgress);
     };
 
-    window.addEventListener('scroll', updateProgress, { passive: true });
-    updateProgress();
+    const observer = new ResizeObserver(scheduleUpdate);
+    observer.observe(document.documentElement);
+    observer.observe(document.body);
+    window.addEventListener('scroll', scheduleUpdate, { passive: true });
+    window.addEventListener('resize', scheduleUpdate);
+    scheduleUpdate();
 
-    return () => window.removeEventListener('scroll', updateProgress);
-  }, []);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      observer.disconnect();
+      window.removeEventListener('scroll', scheduleUpdate);
+      window.removeEventListener('resize', scheduleUpdate);
+    };
+  }, [pathname]);
 
   return progress;
 }

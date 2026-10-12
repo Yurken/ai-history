@@ -6,6 +6,7 @@ import { gsap, ScrollTrigger, shouldAnimate } from '@/lib/utils/animation';
 import { SectionWrapper } from './SectionWrapper';
 import { Link } from '@/i18n/routing';
 import { events } from '@/lib/data/events';
+import { EventCard } from '@/components/timeline/EventCard';
 
 export function TransformerSection() {
   const locale = useLocale();
@@ -102,7 +103,7 @@ export function TransformerSection() {
         <div className="transformer-title sticky top-0 z-10 py-8 backdrop-blur-md bg-dark-950/50 rounded-2xl mb-16">
           <div className="flex items-center gap-4 mb-2">
             <span className="text-primary-400 text-sm font-semibold tracking-wider uppercase">
-              2017
+              2017–2019
             </span>
             <div className="h-px flex-1 bg-gradient-to-r from-primary-500 to-transparent" />
           </div>
@@ -138,7 +139,7 @@ export function TransformerSection() {
 
             <div className="animate-content">
               <Link
-                href={`/${locale}/event/${transformerEvent.slug}`}
+                href={`/event/${transformerEvent.slug}`}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-xl font-semibold transition-colors"
               >
                 {locale === 'zh' ? '了解更多' : 'Learn More'}
@@ -187,6 +188,11 @@ export function TransformerSection() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="mt-16 grid gap-6 md:grid-cols-2">
+          {events.filter(event => event.year >= 2017 && event.year <= 2019 && event.id !== transformerEvent.id).map(event => (
+            <EventCard key={event.id} event={event} />
+          ))}
         </div>
       </div>
     </SectionWrapper>

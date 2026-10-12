@@ -8,7 +8,9 @@
   "hero": {
     "title": "The Complete History of AI",
     "subtitle": "From Turing Test to GPT: Explore the Full Journey of Artificial Intelligence",
-    "scrollHint": "Scroll to explore"
+    "scrollHint": "Scroll to explore",
+    "knowledgeLink": "Explore the technology tree",
+    "timelineLink": "Browse the timeline"
   },
   "sections": {
     "hero": "Prologue",
@@ -26,7 +28,10 @@
     "model": "Model",
     "person": "Person",
     "conference": "Conference",
-    "milestone": "Milestone"
+    "milestone": "Milestone",
+    "software": "Software",
+    "book": "Book",
+    "product": "Product"
   },
   "search": {
     "placeholder": "Search events, people, papers...",
@@ -36,13 +41,30 @@
     "allEvents": "All Events",
     "noResults": "No results found",
     "backHome": "Back to Home",
-    "filters": "Filters"
+    "filters": "Filters",
+    "label": "Search historical events",
+    "submit": "Search",
+    "loading": "Searching…",
+    "loadError": "Search data could not be loaded. Please try again.",
+    "retry": "Try again",
+    "count": "{count, plural, one {# event found} other {# events found}}"
   },
   "timeline": {
     "title": "AI Development Timeline",
     "all": "All",
     "byDecade": "By Decade",
-    "byCategory": "By Category"
+    "byCategory": "By Category",
+    "description": "Find events, papers, and models by decade, category, and keyword. Trace their connections through the history of AI.",
+    "keyword": "Keyword",
+    "placeholder": "Events, papers, models, or tags…",
+    "decadeLabel": "{decade}s",
+    "sort": "Sort order",
+    "oldestFirst": "Oldest first",
+    "newestFirst": "Newest first",
+    "count": "Showing {count} of {total} events",
+    "reset": "Reset filters",
+    "noResults": "No matching events",
+    "emptyHint": "Try a shorter keyword, or reset the decade and category filters."
   },
   "common": {
     "readMore": "Read More",
@@ -50,5 +72,30 @@
     "backToTop": "Back to Top",
     "share": "Share",
     "cite": "Cite"
+  },
+  "knowledge": {
+    "title": "AI Technology Tree",
+    "eyebrow": "SCHOOLS · METHODS · TECHNOLOGIES",
+    "description": "Explore AI through its schools of thought and technical branches. Select a node to discover its ideas, connected methods, historical events, and original sources.",
+    "overlapNote": "The tree organizes knowledge. Methods overlap and combine; related nodes show these connections. It is one way to explore the field, rather than a strict lineage.",
+    "timelineLink": "Browse events chronologically",
+    "searchLabel": "Find a school or technology",
+    "placeholder": "Neural networks, Transformer, GPT…",
+    "expandAll": "Expand all",
+    "collapseAll": "Collapse all",
+    "clearSearch": "Clear search",
+    "root": "Artificial intelligence",
+    "treeLabel": "AI technology tree",
+    "noResults": "No matching technology. Try a shorter keyword.",
+    "selectedBranch": "Selected branch",
+    "connections": "Connected methods and branches",
+    "sources": "References",
+    "relatedEvents": "Related events ({count})",
+    "eventsNote": "Includes events in this node and its descendants. An event can connect to more than one technology.",
+    "noEvents": "Historical events for this branch are still being added.",
+    "eventCount": "{count, plural, one {# related event} other {# related events}}",
+    "expandNode": "Expand {name}",
+    "collapseNode": "Collapse {name}",
+    "filterHint": "Search filters the tree. Select a matching node to view its details."
   }
 }

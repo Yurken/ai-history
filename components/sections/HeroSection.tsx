@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import { gsap, ScrollTrigger, shouldAnimate } from '@/lib/utils/animation';
 import { SectionWrapper } from './SectionWrapper';
 import { cn } from '@/lib/utils/cn';
+import { Link } from '@/i18n/routing';
 
 export function HeroSection() {
   const t = useTranslations('hero');
@@ -106,6 +107,15 @@ export function HeroSection() {
         >
           {t('subtitle')}
         </p>
+
+        <div className="mb-12 flex flex-wrap justify-center gap-3">
+          <Link href="/knowledge" className="rounded-xl bg-primary-700 px-6 py-3 font-semibold text-white transition-colors hover:bg-primary-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary-300">
+            {t('knowledgeLink')}
+          </Link>
+          <Link href="/timeline" className="rounded-xl border border-white/30 px-6 py-3 font-semibold text-white transition-colors hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary-300">
+            {t('timelineLink')}
+          </Link>
+        </div>
 
         {/* 滚动提示 */}
         <div

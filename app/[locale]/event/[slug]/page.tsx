@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { events } from '@/lib/data/events';
 import { Link } from '@/i18n/routing';
-import { SideNav } from '@/components/navigation/SideNav';
+import { getTranslations } from 'next-intl/server';
 
 interface EventPageProps {
   params: Promise<{
@@ -36,19 +36,18 @@ export default async function EventPage({ params }: EventPageProps) {
     notFound();
   }
 
+  const categoryLabel = await getTranslations({ locale, namespace: 'event' });
   const title = locale === 'zh' ? event.title_zh : event.title_en;
   const description = locale === 'zh' ? event.description_zh : event.description_en;
   const content = locale === 'zh' ? event.content_zh : event.content_en;
 
   return (
     <div className="min-h-screen bg-white dark:bg-dark-950">
-      <SideNav locale={locale} />
 
-      <main className="lg:ml-60">
         <article className="max-w-4xl mx-auto px-6 py-16">
           {/* 返回链接 */}
           <Link
-            href={`/${locale}`}
+            href="/"
             className="inline-flex items-center gap-2 text-primary-600 dark:text-primary-400 hover:underline mb-8"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -64,11 +63,11 @@ export default async function EventPage({ params }: EventPageProps) {
                 {event.year}
               </span>
               <span className="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium">
-                {event.category}
+                {categoryLabel(event.category)}
               </span>
             </div>
 
-            <h1 className="text-5xl font-display font-bold text-gray-900 dark:text-white mb-6">
+            <h1 className="text-3xl sm:text-5xl font-display font-bold text-gray-900 dark:text-white mb-6">
               {title}
             </h1>
 
@@ -83,7 +82,7 @@ export default async function EventPage({ params }: EventPageProps) {
               {event.tags.map((tag) => (
                 <Link
                   key={tag}
-                  href={`/${locale}/tag/${tag}`}
+                  href={`/tag/${encodeURIComponent(tag)}`}
                   className="px-4 py-2 bg-gray-100 dark:bg-dark-800 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium hover:bg-gray-200 dark:hover:bg-dark-700 transition-colors"
                 >
                   #{tag}
@@ -144,7 +143,7 @@ export default async function EventPage({ params }: EventPageProps) {
                   return (
                     <Link
                       key={relatedEvent.id}
-                      href={`/${locale}/event/${relatedEvent.slug}`}
+                      href={`/event/${relatedEvent.slug}`}
                       className="block p-6 bg-white dark:bg-dark-900 rounded-2xl border border-gray-200 dark:border-dark-700 hover:border-primary-500/50 hover:shadow-lg transition-all"
                     >
                       <div className="text-sm text-primary-600 dark:text-primary-400 font-semibold mb-2">
@@ -163,7 +162,6 @@ export default async function EventPage({ params }: EventPageProps) {
             </div>
           )}
         </article>
-      </main>
     </div>
   );
 }

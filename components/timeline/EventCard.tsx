@@ -1,7 +1,7 @@
 'use client';
 
 import { Event } from '@/types/event';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { cn } from '@/lib/utils/cn';
 
@@ -11,18 +11,19 @@ interface EventCardProps {
 }
 
 const categoryColors: Record<string, string> = {
-  paper: 'bg-blue-500/20 text-blue-300 border-blue-500/40',
-  model: 'bg-purple-500/20 text-purple-300 border-purple-500/40',
-  person: 'bg-green-500/20 text-green-300 border-green-500/40',
-  conference: 'bg-orange-500/20 text-orange-300 border-orange-500/40',
-  milestone: 'bg-red-500/20 text-red-300 border-red-500/40',
-  software: 'bg-cyan-500/20 text-cyan-300 border-cyan-500/40',
-  book: 'bg-yellow-500/20 text-yellow-300 border-yellow-500/40',
-  product: 'bg-pink-500/20 text-pink-300 border-pink-500/40',
+  paper: 'bg-blue-500/20 text-blue-700 dark:text-blue-300 border-blue-500/40',
+  model: 'bg-purple-500/20 text-purple-700 dark:text-purple-300 border-purple-500/40',
+  person: 'bg-green-500/20 text-green-700 dark:text-green-300 border-green-500/40',
+  conference: 'bg-orange-500/20 text-orange-700 dark:text-orange-300 border-orange-500/40',
+  milestone: 'bg-red-500/20 text-red-700 dark:text-red-300 border-red-500/40',
+  software: 'bg-cyan-500/20 text-cyan-700 dark:text-cyan-300 border-cyan-500/40',
+  book: 'bg-yellow-500/20 text-yellow-800 dark:text-yellow-300 border-yellow-500/40',
+  product: 'bg-pink-500/20 text-pink-700 dark:text-pink-300 border-pink-500/40',
 };
 
-export function EventCard({ event, index = 0 }: EventCardProps) {
+export function EventCard({ event }: EventCardProps) {
   const locale = useLocale();
+  const categoryLabel = useTranslations('event');
 
   const title = locale === 'zh' ? event.title_zh : event.title_en;
   const description = locale === 'zh' ? event.description_zh : event.description_en;
@@ -30,13 +31,10 @@ export function EventCard({ event, index = 0 }: EventCardProps) {
 
   return (
     <Link
-      href={`/${locale}/event/${event.slug}`}
+      href={`/event/${event.slug}`}
       className={cn(
-        'block group relative',
-        'opacity-0 translate-y-8 animate-in',
-        'animation-delay-custom'
+        'block group relative rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary-600'
       )}
-      style={{ '--delay': `${index * 100}ms` } as React.CSSProperties}
     >
       <div className="relative bg-white dark:bg-dark-900 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-dark-700 hover:border-primary-500/50 overflow-hidden">
         {/* 发光效果 */}
@@ -53,7 +51,7 @@ export function EventCard({ event, index = 0 }: EventCardProps) {
                 'px-3 py-1 rounded-full text-xs font-medium border',
                 categoryColor
               )}>
-                {event.category}
+                {categoryLabel(event.category)}
               </span>
             </div>
           </div>

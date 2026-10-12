@@ -55,3 +55,6 @@ next-env.d.ts
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Agent memory
+.workbuddy/
